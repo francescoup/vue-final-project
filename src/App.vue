@@ -1,4 +1,5 @@
 <script setup>
+
 import Buttons from './components/Buttons.vue';
 import Chart from './components/Chart.vue';
 import { onBeforeMount} from 'vue'
@@ -11,19 +12,21 @@ onBeforeMount(()=>{
   store.getData()
 })
 
-
 </script>
 
 <template>
-  <main class="bg-slate-900 flex flex-col items-center justify-center p-4 min-h-screen">
-    <div class=" bg-slate-600 rounded p-2 md:p-4 md:w-[70%] w-full h-full">
-      <h1 class="text-slate-200 font-bold">DNA Metrics</h1>
+  <main class="bg-neutral-950 flex flex-col items-center md:justify-center md:p-4 min-h-screen">
+    <div class="md:bg-neutral-950 bg-neutral-900 md:rounded md:p-4 md:w-[70%] w-full h-full">
+      <h1 class="text-cyan-200 p-4 text-center">DnA traffic charts</h1>
       <Chart 
       :dataSet="chartData"/>
+      <div class="px-6 md:pb-6 pt-2 pb-6">
+        <h2 class="text-cyan-200 text-center">DnA Metrics 2021</h2>
+      </div>
       <Buttons/>
     </div>
-    <div class="fixed bottom-0 p-2">
-      <p class="text-slate-500">By <a href="https://github.com/francescoup" target="_blank">Francesco Mangione</a> per Start2Impact</p>
+    <div class="p-2 mt-8">
+      <p class="text-cyan-200 text-sm">By <a href="https://github.com/francescoup" target="_blank">Francesco Mangione</a> per Start2Impact</p>
     </div>
   </main>
 </template>

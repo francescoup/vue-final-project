@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-slate-900 h-80 rounded p-2 md:p-8 mb-4 overflow-hidden">
+    <div class="bg-neutral-900 h-80 p-2 md:p-8 md:mb-4 overflow-hidden">
         <Line 
             v-if="date"
             id="my-chart-id"
@@ -7,7 +7,6 @@
             :data="date"
         />  
     </div>
-
 </template>
 
 <script setup>
@@ -18,8 +17,7 @@ import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, Li
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, PointElement, LinearScale, LineElement)
 
 const props = defineProps({
-  dataSet:Object,
-    
+  dataSet:Object, 
 })
 
 const date = computed(()=> {
@@ -32,30 +30,36 @@ const options = {
     x: {
       grid: {
         borderDash: [8, 4],
+        display:false,
+        offset:true,
+        drawOnChartArea:true
       },
       ticks: {
-        color: "#f1f5f9",
+        color: "#8d8b95",
       },
     },
     y: {
       grid: {
         borderDash: [8, 4],
+        offset:false,
       },
       ticks: {
-        color: "#ffffff",
+        color: "#8d8b95",
       },
-      beginAtZero: true,
+      beginAtZero: false,
     },
   },
   responsive: true,
   maintainAspectRatio: false,
   plugins: {
     legend: false,
+    tooltip: {
+        usePointStyle: false,
+        displayColors:false
+      }
   },
   
-  
- 
-  }
+}
 
 </script>
 
