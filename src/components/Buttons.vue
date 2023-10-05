@@ -29,7 +29,7 @@ const showIncrement = ref(false)
 function showLabels(){
     showIncrement.value = true
     setTimeout(()=>{
-showIncrement.value = false
+    showIncrement.value = false
     }, 1900)
 }
 

@@ -1,7 +1,78 @@
-# Vue 3 + Vite
+### DnA Metric</br>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Show DnA metrics with labels and chart.
 
-## Recommended IDE Setup
+## Table of Contents
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[General info](#general-info)</br>
+[Technologies](#technologies)</br>
+[Setup](#setup)</br>
+
+### General info
+
+This app has been developed with Vite, Vue.js 3, Pinia for state management, vue Chartjs, tailwind, axios and countUp.
+
+- Chart.
+- Filter data.
+- Upgrade impression value.
+
+![Home](screen-shots/home-page.png)
+
+### Technologies
+
+- [Vue.js](https://vuejs.org/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript?retiredLocale=it)
+- [Vite](https://vitejs.dev/guide/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Chartjs](https://vue-chartjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [CountUp](https://www.npmjs.com/package/vue-countup-v3)
+
+### Setup
+
+Download [Node](https://nodejs.org/en/) and installed it on your operating system like windows or mac.
+
+1. Clone the repository on local server:
+
+   ```sh
+   git clone https://github.com/francescoup/
+   ```
+
+2. Install NPM packages:
+
+   ```sh
+   npm install
+   ```
+
+3. Build from source:
+
+   ```sh
+   npm run build
+   ```
+
+4. Run the live server:
+   git
+
+   ```sh
+   npm run dev
+   ```
+
+   ```
+
+   ```
+
+## License
+
+Distributed under the MIT License.
+
+## Links
+
+You can see the app at the following link:
+
+Live Site: [DnA Metric Vue.js](https://vue2-final.netlify.app/)</br>
+
+## Contact
+
+Contact me on: [f.mangione@live.com](mailto:f.mangione@live.com)  
+Linkedin profile here: [https://www.linkedin.com/in/francesco-mangione/](https://www.linkedin.com/in/francesco-mangione/)

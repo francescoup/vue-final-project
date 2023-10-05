@@ -22,7 +22,7 @@ export const useDnaData = defineStore("dnaData", {
       return Object.values(state.dati);
     },
   },
-  // fetch api and return firts chart's date
+  // get data from api and return first chart's date
   actions: {
     async getData() {
       this.loading = true;
